@@ -1,6 +1,5 @@
-const reader = require("../Utils/readFile");
-
 // Load the dataset
+const reader = require("../Utils/readFile");
 const file = reader.readFile(`${__dirname}\\input.txt`, false);
 
 // Function to get unique characters in a string
