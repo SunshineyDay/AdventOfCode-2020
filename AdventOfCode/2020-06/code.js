@@ -1,6 +1,3 @@
-const { group } = require("console");
-const { Z_FILTERED } = require("zlib");
-const { dynamicSortMultiple } = require("../Utils/objectSort");
 const reader = require("../Utils/readFile");
 
 // Load the dataset
