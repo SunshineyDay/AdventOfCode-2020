@@ -103,16 +103,6 @@ console.log(util.inspect(part1Result, false, null, true));
 console.log(part1Result.size);
 
 
-
-//lr -> bw -> sg -> do -> fb  [lr, bw, sg, ]
-//lr -> bw -> fb
-//lr -> bw -> sg -> vb -> fb
-//do ...
-//do ...
-
-
-//['light red', 'bright white', 'shiny gold', 'dark olive', 'faded blue', 'dotted black', 'vibrant plum', 'muted yellow', 'shiny gold', 'faded blue']
-
 /*
   (LR) - BW
      - MY
@@ -130,44 +120,15 @@ console.log(part1Result.size);
   FB
   DB
 
-  LR BW SG(?) DOL(?) FB(1)
+  LR BW SG DOL FB
   LR BW SG DOL DB
   LR BW SG VP  FB
   LR BW SG VP  DB
-  LR B2 VP DB
+  ...
+  LR B2 ... DB
   DO .. SG ....
   ...
   DO.... VP ... SG ...
 
-  const finalResult = [LR, BW, LR, DO, DO, VP ]
-
-
-  { key: LR, contents: { BW x2, MY 1x }}
-
-   [ 'light red',
-    'bright white',
-    'shiny gold',
-    'dark olive',
-    'faded blue' ],
-  [ 'light red',
-    'bright white',
-    'shiny gold',
-    'dark olive',
-    'dotted black' ]
-
- STEP 1.  const rootObjects = data.filter(x=> [not present in any object] )
- STEP 2.  rootObjects.forEach( x=> x.contents.forEach(c => [find any object in data that has a key of c]) )
-              LR                               BW             SG
-                                               MY             SG
-                                                              FB
 
 */
-
-
-
-// [
-//     { type: 'light red', children: ['bright white', 'muted yellow', 'shiny gold', 'faded blue', 'dark olive', 'vibrant plum'] },
-//     { type: 'dark orange', children: ['bright white', 'muted yellow', 'shiny gold', 'faded blue'] },
-//     { type: 'bright white', children: ['shiny gold', 'dark olive', 'vibrant plum'] },
-
-// ]
