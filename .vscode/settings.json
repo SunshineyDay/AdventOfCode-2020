@@ -1,6 +1,11 @@
 {
-    "deepscan.ignoreConfirmWarning": true,
-    "window.zoomLevel": -1,
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 15
+	"deepscan.ignoreConfirmWarning": true,
+	"window.zoomLevel": -1,
+	"editor.fontSize": 14,
+	"terminal.integrated.fontSize": 15,
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+	"prettier.useEditorConfig": false,
+	"prettier.singleQuote": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
 }
