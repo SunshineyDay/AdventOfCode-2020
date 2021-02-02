@@ -1,5 +1,5 @@
-const util = require('util');
 const fs = require("fs");
+const logger = require("./consoleLog");
 
 const readFile = (filePath, splitNewLines = true, logDataToConsole = false) => {
 
@@ -19,13 +19,13 @@ const readFile = (filePath, splitNewLines = true, logDataToConsole = false) => {
         console.log(`Reading the file: ${filePath} - ${result.length} rows found`);
         console.log("");
         if (logDataToConsole) {
-            console.log(util.inspect(result, false, null, true));
+            logger.consoleLog(result);
         }
         return result;
     }
 
     if (logDataToConsole) {
-        console.log(util.inspect(data, false, null, true));
+        logger.consoleLog(data);
     }
 
     return data;
